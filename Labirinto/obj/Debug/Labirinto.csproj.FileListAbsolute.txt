@@ -1,0 +1,6 @@
+c:\users\1034513\documents\visual studio 2015\Projects\Labirinto\Labirinto\bin\Debug\Labirinto.exe.config
+c:\users\1034513\documents\visual studio 2015\Projects\Labirinto\Labirinto\bin\Debug\Labirinto.exe
+c:\users\1034513\documents\visual studio 2015\Projects\Labirinto\Labirinto\bin\Debug\Labirinto.pdb
+c:\users\1034513\documents\visual studio 2015\Projects\Labirinto\Labirinto\obj\Debug\Labirinto.csprojResolveAssemblyReference.cache
+c:\users\1034513\documents\visual studio 2015\Projects\Labirinto\Labirinto\obj\Debug\Labirinto.exe
+c:\users\1034513\documents\visual studio 2015\Projects\Labirinto\Labirinto\obj\Debug\Labirinto.pdb
