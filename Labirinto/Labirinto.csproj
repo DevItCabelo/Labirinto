@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aresta.cs" />
+    <Compile Include="Celula.cs" />
+    <Compile Include="Dijikstra.cs" />
+    <Compile Include="FPHeapMinIndireto.cs" />
+    <Compile Include="Grafo.cs" />
     <Compile Include="Labirinto.cs" />
+    <Compile Include="LabirintoParaGrafo.cs" />
     <Compile Include="LerDoArquivo.cs" />
+    <Compile Include="Lista.cs" />
+    <Compile Include="No.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

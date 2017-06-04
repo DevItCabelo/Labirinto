@@ -8,18 +8,26 @@ namespace Labirinto
 {
     class Labirinto
     {
-
+        string[] labirinto;
         public void montaGrafo(){
             
+        }
+
+        public string[] getLabirinto()
+        {
+            return labirinto;
         }
 
         public void labirintoDoArquivo()
         {
             LerDoArquivo labirintoStr = new LerDoArquivo();
-            string[] labirinto = labirintoStr.getTexto();
-            for (int i = 0; i < labirinto.Length; i++) Console.WriteLine(labirinto[i]);
-
-            Console.WriteLine(labirinto[2][4]);
+            labirinto = labirintoStr.getTexto();
+        }
+        public override string ToString()
+        {
+            string labirintoStr = "";
+            foreach (string lab in labirinto) labirintoStr += lab + "\n";
+            return labirintoStr;
         }
     }
 }

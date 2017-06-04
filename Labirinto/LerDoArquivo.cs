@@ -10,13 +10,25 @@ namespace Labirinto
     class LerDoArquivo
     {
         StreamReader sr = new StreamReader(@"labirinto.txt");
-        string[] labirinto;
+        string[] labirintoCompleto;
+        List<string[]> labirintos = new List<string[]>();
         public string[] getTexto()
         {
-            string linha;
-            labirinto = new string[File.ReadLines(@"labirinto.txt").Count()];
-            for (int i = 0; (linha = sr.ReadLine()) != null; i++) labirinto[i] = linha;
-            return labirinto;
+            string linha = "";
+            for (int i = 0; linha != null; i++)
+            {
+                labirintos.Add(new string[10]);
+                linha = sr.ReadLine();
+                for (int j = 0; linha != null && !linha.Equals("-"); j++)
+                {
+                    labirintos[i][j] = linha;
+                    linha = sr.ReadLine();
+                }
+            }
+            
+            Random num = new Random();
+            int labNum = num.Next(0, 2);
+            return labirintos[labNum];
         }
     }
 }
